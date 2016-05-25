@@ -85,7 +85,7 @@ typedef unsigned long pt_timer;
 	/**
 	 * Delay for specific milliseconds while condition
 	 */
-	#define PT_TIMER_WHILE_DELAY(pt,condition,time)		\
+	#define PT_TIMER_DELAY_WHILE(pt,time,condition)		\
 		do {												\
 			(pt)->t = millis();				\
 			LC_SET((pt)->lc);					\
