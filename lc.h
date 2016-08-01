@@ -119,14 +119,10 @@
 #ifndef __LC_H__
 #define __LC_H__
 
-#define LC_INCLUDE    <lc-addrlabels.h>
-
-#ifdef LC_INCLUDE
-//#include LC_INCLUDE
+/*for GCC*/
 #include <lc-addrlabels.h>
-#else
-#include "lc-switch.h"
-#endif /* LC_INCLUDE */
+/*for other*/
+//#include "lc-switch.h"
 
 #endif /* __LC_H__ */
 
